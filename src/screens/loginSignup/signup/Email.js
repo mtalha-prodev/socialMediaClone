@@ -14,13 +14,14 @@ const Email = ({navigation}) => {
     <SafeAreaView className={background}>
       <View className={form.container}>
         <Text className={form.title}>Sign Up</Text>
+        <Text className={form.text}>Create a New Account</Text>
         <TextInput
-          placeholder="enter your email ..."
+          placeholder="Enter Your Email ..."
           className={form.inputText}
         />
         <TouchableOpacity
           className={form.btn}
-          onPress={() => navigation.navigate(SIGNUP_ROUTES.USERNAME)}>
+          onPress={() => navigation.navigate(SIGNUP_ROUTES.VERIFICATION)}>
           <Text className={form.btn_text}>Next</Text>
         </TouchableOpacity>
       </View>

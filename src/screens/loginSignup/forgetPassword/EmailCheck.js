@@ -7,27 +7,22 @@ import {
 } from 'react-native';
 import React from 'react';
 import {background, form} from '../../../components/style';
-import {SIGNUP_ROUTES} from '../../../navigation/routes';
+import {FORGET_ROUTES} from '../../../navigation/routes';
 
-const Password = ({navigation}) => {
+const EmailCheck = ({navigation}) => {
   return (
     <SafeAreaView className={background}>
       <View className={form.container}>
-        <Text className={form.title}>Password</Text>
-        <Text className={form.text}>Choose a strong Password</Text>
+        <Text className={form.title}>Sign Up</Text>
+        <Text className={form.text}>Enter Your Email</Text>
         <TextInput
-          placeholder="Enter Password ..."
-          placeholderTextColor={'black'}
-          className={form.inputText}
-        />
-        <TextInput
-          placeholder="Confirm Password ..."
+          placeholder="Enter Your Email ..."
           placeholderTextColor={'black'}
           className={form.inputText}
         />
         <TouchableOpacity
           className={form.btn}
-          onPress={() => navigation.navigate(SIGNUP_ROUTES.ROLL)}>
+          onPress={() => navigation.navigate(FORGET_ROUTES.VERIFICATION)}>
           <Text className={form.btn_text}>Next</Text>
         </TouchableOpacity>
       </View>
@@ -35,4 +30,4 @@ const Password = ({navigation}) => {
   );
 };
 
-export default Password;
+export default EmailCheck;

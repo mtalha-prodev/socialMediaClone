@@ -14,8 +14,9 @@ const Username = ({navigation}) => {
     <SafeAreaView className={background}>
       <View className={form.container}>
         <Text className={form.title}>User name</Text>
+        <Text className={form.text}>Choose a Username</Text>
         <TextInput
-          placeholder="enter username ..."
+          placeholder="Enter a Uername ..."
           className={form.inputText}
         />
         <TouchableOpacity

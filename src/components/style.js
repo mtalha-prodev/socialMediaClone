@@ -7,7 +7,8 @@ export const form = {
   inputText:
     'w-11/12 text-lg p-2 pl-4 mt-5 rounded-xl bg-gray-200 text-zinc-800',
   title: 'text-3xl font-bold text-gray-200',
-  text: 'text-zinc-950 text-slate-50 dark:text-slate-50',
-  btn: 'mt-12 w-11/12 p-2 border-2 items-center justify-center rounded-xl border-slate-50',
+  text: 'text-gray-500 text-lg mt-2 dark:text-slate-50',
+  btn: 'mt-6 w-11/12 p-2 border-2 items-center justify-center rounded-xl border-slate-50',
   btn_text: 'text-xl font-semibold text-slate-50',
+  placeholder: 'text-zinc-800',
 };

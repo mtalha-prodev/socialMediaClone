@@ -11,6 +11,19 @@ export const {
 export const {
   default: VerificationCode,
 } = require('../screens/loginSignup/signup/VerificationCode');
-
+export const {default: Roll} = require('../screens/loginSignup/signup/Roll');
+// forget password
+export const {
+  default: EmailCheck,
+} = require('../screens/loginSignup/forgetPassword/EmailCheck');
+export const {
+  default: ForgetVerification,
+} = require('../screens/loginSignup/forgetPassword/ForgetVerification');
+export const {
+  default: ForgetPassword,
+} = require('../screens/loginSignup/forgetPassword/ForgetPassword');
+export const {
+  default: Successfuly,
+} = require('../screens/loginSignup/forgetPassword/Successfuly');
 // main page routes
 export const {default: Home} = require('../screens/mainPage/Home');

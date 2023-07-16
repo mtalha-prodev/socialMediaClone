@@ -6,15 +6,15 @@ import {
   TouchableOpacity,
 } from 'react-native';
 import React from 'react';
+import {FORGET_ROUTES} from '../../../navigation/routes';
 import {background, form} from '../../../components/style';
-import {SIGNUP_ROUTES} from '../../../navigation/routes';
 
-const Password = ({navigation}) => {
+const ForgetPassword = ({navigation}) => {
   return (
     <SafeAreaView className={background}>
       <View className={form.container}>
         <Text className={form.title}>Password</Text>
-        <Text className={form.text}>Choose a strong Password</Text>
+        <Text className={form.text}>Forget Password</Text>
         <TextInput
           placeholder="Enter Password ..."
           placeholderTextColor={'black'}
@@ -27,7 +27,7 @@ const Password = ({navigation}) => {
         />
         <TouchableOpacity
           className={form.btn}
-          onPress={() => navigation.navigate(SIGNUP_ROUTES.ROLL)}>
+          onPress={() => navigation.navigate(FORGET_ROUTES.SUCCESSFULLY)}>
           <Text className={form.btn_text}>Next</Text>
         </TouchableOpacity>
       </View>
@@ -35,4 +35,4 @@ const Password = ({navigation}) => {
   );
 };
 
-export default Password;
+export default ForgetPassword;

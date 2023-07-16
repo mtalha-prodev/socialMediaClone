@@ -1,14 +1,12 @@
 import {View, Text, StatusBar, TextInput, TouchableOpacity} from 'react-native';
 import React from 'react';
 import {SafeAreaView} from 'react-native-safe-area-context';
+import {background, form} from '../../../components/style';
 import {
-  background,
-  form,
-  form_btn,
-  text,
-  title,
-} from '../../../components/style';
-import {MAIN_ROUTES, SIGNUP_ROUTES} from '../../../navigation/routes';
+  FORGET_ROUTES,
+  MAIN_ROUTES,
+  SIGNUP_ROUTES,
+} from '../../../navigation/routes';
 
 const Login = ({navigation}) => {
   return (
@@ -19,17 +17,19 @@ const Login = ({navigation}) => {
 
         <TextInput
           placeholder="enter your email ..."
+          placeholderTextColor={'black'}
           className={form.inputText}
         />
         <TextInput
           placeholder="password your email ..."
+          placeholderTextColor={'black'}
           className={form.inputText}
         />
         <View className="items-end justify-end w-11/12 ">
           <Text
             className="text-gray-300 text-base text-end mt-4"
-            onPress={() => navigation.navigate(SIGNUP_ROUTES.EMAIL)}>
-            Forget password ?
+            onPress={() => navigation.navigate(FORGET_ROUTES.EMAIL)}>
+            Forget Password?
           </Text>
         </View>
 
@@ -40,12 +40,12 @@ const Login = ({navigation}) => {
         </TouchableOpacity>
 
         <TouchableOpacity
-          className="flex-row mt-4 w-11/12 justify-end"
+          className="flex-row mt-4 w-11/12 justify-center"
           onPress={() => navigation.navigate(SIGNUP_ROUTES.EMAIL)}>
           <Text className="text-base text-gray-400">
             Don't have an Account!
           </Text>
-          <Text className="text-base text-gray-200 ml-2">Signup?</Text>
+          <Text className="text-base text-gray-200 ml-2">Sign Up</Text>
         </TouchableOpacity>
       </View>
     </SafeAreaView>
