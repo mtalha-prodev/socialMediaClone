@@ -1,6 +1,10 @@
 export const background = 'bg-slate-50 bg-zinc-900 h-full dark:bg-zinc-900';
 export const containerStyle = '';
 
+export const mainPage = {
+  container: ' flex-1',
+};
+
 // input form
 export const form = {
   container: 'justify-center items-center flex-1',

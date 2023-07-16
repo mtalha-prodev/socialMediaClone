@@ -14,5 +14,5 @@ export const FORGET_ROUTES = {
 export const MAIN_ROUTES = {
   HOME: 'HOME',
   PROFILE: 'PROFILE',
-  CHAT: 'CHAT',
+  CHATS: 'CHATS',
 };

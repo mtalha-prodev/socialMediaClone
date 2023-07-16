@@ -27,3 +27,4 @@ export const {
 } = require('../screens/loginSignup/forgetPassword/Successfuly');
 // main page routes
 export const {default: Home} = require('../screens/mainPage/Home');
+export const {default: Chats} = require('../screens/chats/Chats');

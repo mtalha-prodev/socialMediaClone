@@ -4,6 +4,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
 import {
+  Chats,
   Email,
   EmailCheck,
   ForgetPassword,
@@ -53,6 +54,13 @@ const Navigation = () => {
         <Stack.Screen name={SIGNUP_ROUTES.ROLL} component={Roll} />
         {/* home  */}
         <Stack.Screen name={MAIN_ROUTES.HOME} component={Home} />
+        <Stack.Screen
+          name={MAIN_ROUTES.CHATS}
+          options={{
+            animation: 'slide_from_bottom',
+          }}
+          component={Chats}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
