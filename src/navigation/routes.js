@@ -1,0 +1,11 @@
+export const SIGNUP_ROUTES = {
+  EMAIL: 'EMAIL',
+  USERNAME: 'USERNAME',
+  PASSWORD: 'PASSWORD',
+  VERIFICATION: 'VERIFICATION',
+};
+export const MAIN_ROUTES = {
+  HOME: 'HOME',
+  PROFILE: 'PROFILE',
+  CHAT: 'CHAT',
+};
