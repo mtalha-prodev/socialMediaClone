@@ -15,4 +15,5 @@ export const MAIN_ROUTES = {
   HOME: 'HOME',
   PROFILE: 'PROFILE',
   CHATS: 'CHATS',
+  SETTING: 'SETTING',
 };

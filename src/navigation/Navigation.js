@@ -13,6 +13,7 @@ import {
   Login,
   Password,
   Roll,
+  Settings,
   Successfuly,
   Username,
   VerificationCode,
@@ -60,6 +61,13 @@ const Navigation = () => {
             animation: 'slide_from_bottom',
           }}
           component={Chats}
+        />
+        <Stack.Screen
+          name={MAIN_ROUTES.SETTING}
+          options={{
+            animation: 'slide_from_left',
+          }}
+          component={Settings}
         />
       </Stack.Navigator>
     </NavigationContainer>

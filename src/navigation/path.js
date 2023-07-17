@@ -28,3 +28,4 @@ export const {
 // main page routes
 export const {default: Home} = require('../screens/mainPage/Home');
 export const {default: Chats} = require('../screens/chats/Chats');
+export const {default: Settings} = require('../screens/mainPage/Settings');
