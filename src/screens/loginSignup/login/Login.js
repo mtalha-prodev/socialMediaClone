@@ -27,7 +27,7 @@ const Login = ({navigation}) => {
         />
         <View className="items-end justify-end w-11/12 ">
           <Text
-            className="text-gray-300 text-base text-end mt-4"
+            className=" text-base text-end mt-4 text-zinc-800 dark:text-gray-300"
             onPress={() => navigation.navigate(FORGET_ROUTES.EMAIL)}>
             Forget Password?
           </Text>
@@ -42,10 +42,12 @@ const Login = ({navigation}) => {
         <TouchableOpacity
           className="flex-row mt-4 w-11/12 justify-center"
           onPress={() => navigation.navigate(SIGNUP_ROUTES.EMAIL)}>
-          <Text className="text-base text-gray-400">
+          <Text className="text-base text-zinc-700 dark:text-zinc-400">
             Don't have an Account!
           </Text>
-          <Text className="text-base text-gray-200 ml-2">Sign Up</Text>
+          <Text className="text-base ml-2 text-zinc-800 dark:text-gray-200 ">
+            Sign Up
+          </Text>
         </TouchableOpacity>
       </View>
     </SafeAreaView>

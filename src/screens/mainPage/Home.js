@@ -27,7 +27,7 @@ const Home = ({navigation}) => {
 
       {/* main section */}
 
-      <View className=" w-11/12 mb-20 mt-16  self-center">
+      <View className=" w-11/12 mb-20 mt-16 self-center">
         <ScrollView
           className="w-full h-full py-2"
           showsVerticalScrollIndicator={false}>
@@ -44,7 +44,7 @@ const Home = ({navigation}) => {
       </View>
 
       {/* bottom navbar */}
-      <View className="absolute bottom-0 w-full h-20 bg-zinc-800 p-2 justify-around items-center flex-row rounded-t-3xl">
+      <View className="absolute bottom-0 w-full h-16  p-2 justify-around items-center flex-row rounded-t-3xl bg-zinc-600 dark:bg-zinc-800">
         <TouchableOpacity onPress={() => setSelectedTab(0)}>
           <Ionicons
             size={30}

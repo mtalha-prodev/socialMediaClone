@@ -78,7 +78,7 @@ const RandomPost = () => {
       {data.map(item => {
         return (
           <View
-            className="border-2 rounded-xl h-11/12 my-2  dark:border-zinc-800  "
+            className="border-2 rounded-xl h-11/12 my-2 border-zinc-400  dark:border-zinc-800 "
             key={item.id}>
             <PostCard item={item} />
           </View>

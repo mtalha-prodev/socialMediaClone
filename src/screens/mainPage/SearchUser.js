@@ -1,14 +1,6 @@
-import {
-  View,
-  Text,
-  TouchableOpacity,
-  SafeAreaView,
-  TextInput,
-  ScrollView,
-} from 'react-native';
+import {View, SafeAreaView, TextInput, ScrollView} from 'react-native';
 import React, {useState} from 'react';
 import {background, form} from '../../components/style';
-import Icon from '../../common/Icon';
 import ChatUser from '../../components/ChatUser';
 
 const data = [
@@ -41,7 +33,7 @@ const SearchUser = () => {
 
       <View className=" w-full my-2 mt-4 self-center ">
         {/* header */}
-        <View className="border-2 border-zinc-800 p-2 rounded-xl py-2 mb-2">
+        <View className="border-2 p-2 rounded-xl py-2 mb-2 border-zinc-500 dark:border-zinc-800 ">
           <View className="justify-center items-center mb-5">
             <TextInput
               className={form.inputText}

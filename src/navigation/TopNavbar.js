@@ -5,7 +5,7 @@ import {MAIN_ROUTES} from './routes';
 
 const TopNavbar = ({selectedTab}) => {
   return (
-    <View className="absolute top-0 w-full h-16 bg-zinc-800 p-2 justify-between items-center flex-row ">
+    <View className="absolute top-0 w-full p-2 justify-between items-center flex-row h-16 bg-zinc-600 dark:bg-zinc-800  ">
       <BottomBtn size={35} name={'home'} color={'orange'} />
       {selectedTab == 0 && (
         <BottomBtn

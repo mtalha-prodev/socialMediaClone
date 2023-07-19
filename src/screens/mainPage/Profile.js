@@ -71,30 +71,40 @@ const PostCard = ({data}) => {
             className="w-36 h-36 rounded-full "
           />
 
-          <Text className="text-zinc-50 font-bold text-xl my-4 bg-zinc-800 py-2 px-5 rounded-full">
+          <Text className="text-zinc-50 font-bold text-xl my-4 bg-zinc-400  py-2 px-5 rounded-full dark:bg-zinc-800">
             {item.username}
           </Text>
 
-          <View className="flex-row justify-between w-full border-t-2 py-4 border-b-2 border-gray-50">
+          <View className="flex-row justify-between w-full border-gray-400 border-t-2 py-4 border-b-2 dark:border-gray-50">
             <View className="items-center">
-              <Text className="text-zinc-50 text-base">Followers</Text>
-              <Text className="text-zinc-50 text-base">{item.followers}</Text>
+              <Text className="text-zinc-800  text-base dark:text-zinc-50">
+                Followers
+              </Text>
+              <Text className="text-zinc-600 dark:text-zinc-50 text-base">
+                {item.followers}
+              </Text>
             </View>
             <View className="items-center  ">
-              <Text className="text-zinc-50 text-base">Followers</Text>
-              <Text className="text-zinc-50 text-base">{item.following}</Text>
+              <Text className="text-zinc-800  text-base dark:text-zinc-50">
+                Following
+              </Text>
+              <Text className="text-zinc-600 dark:text-zinc-50 text-base">
+                {item.following}
+              </Text>
             </View>
             <View className="items-center ">
-              <Text className="text-zinc-50 text-base ">Posts</Text>
-              <Text className="text-zinc-50 text-base">
+              <Text className="text-zinc-800 dark:text-zinc-50 text-base ">
+                Posts
+              </Text>
+              <Text className="text-zinc-600 dark:text-zinc-50 text-base">
                 {item.postPic.length}
               </Text>
             </View>
           </View>
-          <Text className="text-zinc-50 my-6 bg-zinc-800 w-full p-2 text-lg text-center rounded-md font-bold ">
+          <Text className="bg-zinc-400 my-6 w-full p-2 text-lg text-center rounded-md font-bold dark:bg-zinc-800 text-zinc-50">
             {item.title}
           </Text>
-          <Text className="text-zinc-50 text-xl bg-zinc-800 px-6 mb-4 rounded-full font-bold ">
+          <Text className=" text-xl bg-zinc-400 px-6 mb-4 rounded-full font-bold dark:bg-zinc-800 text-zinc-50">
             Your Posts
           </Text>
 
@@ -113,13 +123,15 @@ const PostCard = ({data}) => {
             </View>
           </ScrollView>
           {item?.postPic?.map(pic => (
-            <View className="w-full my-5 border-2 rounded-md border-zinc-800">
+            <View className="w-full my-5 border-2 rounded-md border-zinc-400 dark:border-zinc-800">
               <View className="flex-row items-center ml-3 mt-3">
                 <Image
                   source={{uri: item.profilePic}}
                   className="w-14 h-14 rounded-full mr-3"
                 />
-                <Text className="text-zinc-50 text-lg">{item.username}</Text>
+                <Text className=" text-lg text-zinc-800 dark:text-zinc-50">
+                  {item.username}
+                </Text>
               </View>
               <Image
                 source={{uri: pic.postImg}}

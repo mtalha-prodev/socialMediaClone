@@ -13,7 +13,9 @@ const PostCard = ({item}) => {
           source={{uri: item.profilePic}}
           className="w-10 h-10 mr-2 rounded-full"
         />
-        <Text className="font-bold text-xl capitalize">{item.name}</Text>
+        <Text className="font-bold text-xl capitalize text-zinc-800 dark:text-zinc-50">
+          {item.name}
+        </Text>
       </View>
       <Image source={{uri: item.image}} className="w-full h-96" />
       <View className="flex-row ml-2">
@@ -22,7 +24,7 @@ const PostCard = ({item}) => {
             className="my-2 p-2 flex-row items-center "
             onPress={() => setIsLikes(!isLikes)}>
             <Icon name={'heart'} size={30} color={'red'} />
-            <Text className="text-base ml-1 font-bold">
+            <Text className="text-base ml-1 font-bold dark:text-zinc-50">
               {item.likes.length + 1}
             </Text>
           </TouchableOpacity>
@@ -31,7 +33,7 @@ const PostCard = ({item}) => {
             className="my-2 p-2 flex-row items-center "
             onPress={() => setIsLikes(!isLikes)}>
             <Icon name={'heart-outline'} size={30} color={'gray'} />
-            <Text className="text-base ml-1 font-bold">
+            <Text className="text-base ml-1 font-bold dark:text-zinc-50">
               {item.likes.length}
             </Text>
           </TouchableOpacity>
@@ -54,11 +56,13 @@ const PostCard = ({item}) => {
                 source={{uri: item.profilePic}}
                 className="w-10 h-10 rounded-full mr-2"
               />
-              <View className="bg-zinc-800 px-2 py-1 rounded-md">
-                <Text className="text-lg font-bold capitalize ">
+              <View className="bg-zinc-300 px-2 py-1 rounded-md dark:bg-zinc-800">
+                <Text className="text-lg font-bold capitalize text-zinc-800 dark:text-zinc-50">
                   {comment.username}
                 </Text>
-                <Text className="ml-4 text-base">{comment.comment}</Text>
+                <Text className="ml-4 text-base text-zinc-600 dark:text-zinc-100 ">
+                  {comment.comment}
+                </Text>
               </View>
             </View>
           ))}

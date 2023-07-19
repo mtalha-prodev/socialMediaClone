@@ -47,14 +47,14 @@ const Chats = ({navigation}) => {
 
       <View className=" w-11/12 my-2 mt-4 self-center ">
         {/* header */}
-        <View className="border-2 border-zinc-800 p-2 rounded-xl py-4 mb-2">
+        <View className="border-2  p-2 rounded-xl py-4 mb-2 border-zinc-400 dark:border-zinc-800">
           <TouchableOpacity
-            className="bg-zinc-50 w-8 h-8 rounded-full"
+            className="bg-zinc-800 w-8 h-8 rounded-full dark:bg-zinc-50"
             onPress={() => navigation.goBack()}>
-            <Icon size={30} name={'arrow-back'} color={'black'} />
+            <Icon size={30} name={'arrow-back'} color={'gray'} />
           </TouchableOpacity>
           <View className="justify-center items-center mb-5">
-            <Text className="text-xl font-bold text-zinc-800 dark:text-gray-50 ">
+            <Text className="text-xl font-bold text-zinc-800 dark:text-zinc-50 ">
               Your Chats
             </Text>
             <TextInput

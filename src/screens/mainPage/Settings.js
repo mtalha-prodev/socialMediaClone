@@ -13,14 +13,12 @@ const Settings = ({navigation}) => {
         {/* header */}
 
         <TouchableOpacity
-          className="bg-zinc-50 w-8 h-8 rounded-full"
+          className="bg-zinc-800 w-8 h-8 rounded-full dark:bg-zinc-50"
           onPress={() => navigation.goBack()}>
-          <Icon size={30} name={'arrow-back'} color={'black'} />
+          <Icon size={30} name={'arrow-back'} color={'gray'} />
         </TouchableOpacity>
         <View className="justify-center items-center mb-5">
-          <Text className="text-3xl font-bold text-zinc-50 dark:text-gray-50 ">
-            Settings
-          </Text>
+          <Text className={form.title}>Settings</Text>
           <Text className="text-base mt-2 font-bold text-zinc-600 dark:text-gray-50 ">
             Edit Profile
           </Text>
@@ -31,10 +29,10 @@ const Settings = ({navigation}) => {
           showsVerticalScrollIndicator={false}>
           {/* search and map data show */}
           <View>
-            <Text className="text-lg font-bold text-zinc-50 dark:text-gray-50 my-4  border-b-2 pb-3 border-zinc-400">
+            <Text className="text-lg font-bold text-zinc-800 dark:text-gray-50 my-4  border-b-2 pb-3 border-zinc-400">
               Forget Password
             </Text>
-            <Text className="text-lg font-bold text-zinc-50 dark:text-gray-50 border-b-2 pb-3 border-zinc-400">
+            <Text className="text-lg font-bold text-zinc-800 dark:text-gray-50 border-b-2 pb-3 border-zinc-400">
               Change Profile
             </Text>
           </View>
